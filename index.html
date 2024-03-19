@@ -114,10 +114,8 @@ link.style.display = 'block';
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("input").change(function(){
-    alert("The text has been changed.");
-  });
+$("#fname").bind("change paste keyup", function() {
+   alert($(this).val()); 
 });
 </script>
 </body>
