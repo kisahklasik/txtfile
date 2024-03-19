@@ -112,16 +112,13 @@ link.style.display = 'block';
 }, false);
 })();
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-function myFunction(create) {
-  var txt;
-  if (confirm("Press a button!")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
+$(document).ready(function(){
+  $("input").change(function(){
+    alert("The text has been changed.");
+  });
+});
 </script>
 </body>
 </html>
